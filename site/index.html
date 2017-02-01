@@ -1,32 +1,32 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Heading Elements</title>
-</head>
-<body>
-	<header>
-		header element - Some header information goes here. Usually consist of company logo, some tags line, etc. Sometimes, navigation is contained in the header as well.
-		<nav>nav (short for navigation) element. Usually contains links to different parts of the website.
-		</nav>
-	</header>
-	<h1>Main Heading of the Pages</h1>
-	<section>
-		Sections 1
-		<article>Article 1</article>
-		<article>Article 2</article>
-		<article>Article 3</article>
-	</section>
-	<secion>
-		Section 2
-		<article>Article 4</article>
-		<article>Article 5</article>
-		<article>Article 6</article>
-		<div>Regular DIV element</div>
-	</secion>
-	<aside>Some information that relates to the main topic, i.e related posts.
-	</aside>
-	<footer>JHU copyright 2017.
-	</footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>child-selector-before html</title>
+    <style>
+
+    section > article {
+      color:green;
+      font-size:24px;
+    }
+    section > h2 {
+      color:green;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector</h1>
+    <section>
+      <h2>Subheading 1</h2>
+      <div>
+        <article>ARTICLE which inside DIV, which is inside SECTION</article>
+      </div>
+    </section>
+    <section>
+      <article>ARTICLE as a direct child of the SECTION element.
+      </article>
+    </section>
+    <h2>Subheading 2</h2>
+
+  </body>
 </html>
